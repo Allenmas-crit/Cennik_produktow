@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Sign UP{% endblock %}
+{% block content %}
+<form method="POST">
+    <h3 align="center">Sign up</h3>
+    <div class="form-group">
+        <label for="email"> Adres Email</label>
+        <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Wprowadź email"
+        />
+    </div>
+    <div class="form-group">
+        <label for="firstName">Imie</label>
+        <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                name="firstName"
+                placeholder="Wprowadź imie"
+        />
+    </div>
+    <div class="form-group">
+        <label for="secondName">Nazwisko</label>
+        <input
+                type="text"
+                class="form-control"
+                id="secondName"
+                name="secondName"
+                placeholder="wprowadź nazwisko"
+        />
+    </div>
+    <div class="form-group">
+        <label for="companyName">Nazwa Firmy</label>
+        <input
+                type="text"
+                class="form-control"
+                id="companyName"
+                name="companyName"
+                placeholder="wprowadź nazwe swojej firmy"
+        />
+    </div>
+    <div class="form-group">
+        <label for="password1">Hasło</label>
+        <input
+                type="password"
+                class="form-control"
+                id="password1"
+                name="password1"
+                placeholder="wprowadź hasło "
+        />
+    </div>
+    <div class="form-group">
+        <label for="password2">Potwierdzenie Hasło</label>
+        <input
+                type="password"
+                class="form-control"
+                id="password2"
+                name="password2"
+                placeholder="Potwierdź hasło "
+        />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Potwierdź</button>
+
+
+</form>
+{% endblock %}
