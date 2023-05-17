@@ -1,8 +1,9 @@
 from flask import request,flash
 import re
 
+
 def check_password(password1,password2):
-    if not password1 != password2:
+    if not password1 == password2:
         flash('Hasła muszą być identyczne', category="error")
 
     if not re.search(r'\d', password1):
